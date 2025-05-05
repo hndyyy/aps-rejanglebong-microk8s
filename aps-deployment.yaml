@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ci3
+  namespace: laravel-ns
+spec:
+  replicas: 2
+  hostname: root
+  selector:
+    matchLabels:
+      app: ci3
+  template:
+    metadata:
+      labels:
+        app: ci3
+    spec:
+      containers:
+        - name: aps-rejanglebong
+          image: hndy/microk8s:aps-rejanglebong
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 500m
+              memory: 256Mi
+          env:
+            - name: DB_HOST
+              value: mysql
+            - name: DB_PORT
+              value: "3306"
+            - name: DB_DATABASE
+              value: laravel
+            - name: DB_USERNAME
+              value: root
+            - name: DB_PASSWORD
+              value: root
