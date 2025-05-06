@@ -32,8 +32,6 @@ spec:
             - name: DB_PORT
               value: "3306"
             - name: DB_DATABASE
-              value: laravel
-            - name: DB_USERNAME
-              value: root
+              value: apsdatabase
             - name: DB_PASSWORD
               value: root
