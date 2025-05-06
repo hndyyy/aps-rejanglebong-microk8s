@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ci3
-  namespace: laravel-ns
+  namespace: ci3
 spec:
   replicas: 2
   hostname: root
