@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: aps-rejanglebong
-          image: hndy/microk8s:aps-rejanglebong2
+          image: hndy/microk8s:aps-rejanglebong
           ports:
             - containerPort: 80
           resources:
