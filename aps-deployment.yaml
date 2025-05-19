@@ -11,6 +11,8 @@ spec:
       app: ci3
   template:
     metadata:
+      annotations:
+        kubectl.kubernetes.io/restartedAt: "2025-05-19T15:00:00Z"
       labels:
         app: ci3
     spec:
