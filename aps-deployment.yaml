@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: aps-rejanglebong
-          image: hndy/microk8s:aps-rejanglebong
+          image: hndy/microk8s:aps-new
           imagePullPolicy: Always
           ports:
             - containerPort: 80
